@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>St0rmyx | 3D Assets</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #0b0d12;
+  color: #f4f6ff;
+  font-family: Arial, sans-serif;
+}
+header {
+  padding: 25px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #222631;
+}
+.logo { font-size: 25px; font-weight: 900; }
+.logo span { color: #55e6ff; }
+nav a {
+  color: #aaaebd;
+  text-decoration: none;
+  margin-left: 22px;
+}
+.hero {
+  padding: 100px 8% 75px;
+  background: radial-gradient(ellipse at 80% 20%, #123344, transparent 55%);
+}
+.tag { color: #55e6ff; letter-spacing: 3px; }
+h1 { font-size: clamp(42px, 7vw, 76px); margin: 20px 0; }
+h1 span { color: #55e6ff; }
+.hero p { color: #a7adbd; line-height: 1.8; max-width: 540px; }
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #55e6ff;
+  color: #081016;
+  padding: 14px 23px;
+  border-radius: 7px;
+  font-weight: bold;
+  text-decoration: none;
+}
+section { padding: 55px 8%; }
+h2 { font-size: 32px; }
+.muted { color: #9ba2b4; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+.card {
+  background: #141720;
+  border: 1px solid #272c39;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: .25s;
+}
+.card:hover { transform: translateY(-6px); border-color: #55e6ff; }
+.preview {
+  height: 190px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #192d40, #25203a);
+  font-size: 62px;
+}
+.card h3, .card p { margin: 16px; }
+.card p { color: #9ba2b4; font-size: 14px; }
+#contact { background: #10131b; }
+footer {
+  padding: 25px 8%;
+  color: #858b9b;
+  border-top: 1px solid #252936;
+}
+a { transition: .2s; }
+@media(max-width: 520px) {
+  header { padding: 20px 5%; }
+  nav a { margin-left: 10px; font-size: 13px; }
+  .hero, section { padding-left: 6%; padding-right: 6%; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">St0rmy<span>x</span></div>
+  <nav>
+    <a href="#assets">Assets</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="tag">3D ASSETS / UNITY</div>
+  <h1>Build worlds.<br><span>Make games.</span></h1>
+  <p>
+    Stylish low poly 3D assets for Unity.
+    Clean models, optimized for game development
+    and ready to bring your ideas to life.
+  </p>
+  <a class="btn" href="#assets">Explore Assets ↘</a>
+</div>
+
+<section id="assets">
+  <h2>Featured Assets</h2>
+  <p class="muted">A selection of my 3D work.</p>
+  <div class="grid">
+    <article class="card">
+      <div class="preview">🏠</div>
+      <h3>Low Poly Houses</h3>
+      <p>Stylized buildings for game environments.</p>
+    </article>
+    <article class="card">
+      <div class="preview">🌲</div>
+      <h3>Nature Pack</h3>
+      <p>Trees and natural props for your worlds.</p>
+    </article>
+    <article class="card">
+      <div class="preview">⚔️</div>
+      <h3>Medieval Props</h3>
+      <p>Fantasy objects for adventure games.</p>
+    </article>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About St0rmyx</h2>
+  <p class="muted">
+    I create low poly 3D models with a focus on
+    stylized design and game development.
+    My goal is to help indie developers build
+    amazing worlds with affordable assets.
+  </p>
+</section>
+
+<section id="contact">
+  <h2>Let's Work Together</h2>
+  <p class="muted">
+    Interested in my assets or need a custom model?
+    Contact me by email.
+  </p>
+  <a class="btn" href="mailto:YOUR_EMAIL@example.com">
+    Contact Me ↗
+  </a>
+</section>
+
+<footer>© 2026 St0rmyx — 3D Assets for Unity</footer>
+</body>
+</html>
